@@ -1,6 +1,6 @@
 # $`\textcolor{blue}{\text{Python Basics - Algorithms}}`$
 A collection of Python (.py) files illustrating algorithms in Python.  
-Richard Ay (February 2026, *updated *)
+Richard Ay (April 2026, *updated *)
 
 ## $`\textcolor{blue}{\text{Table of Contents}}`$  
 * [Setup](#setup)
@@ -10,9 +10,8 @@ Richard Ay (February 2026, *updated *)
 
 
 ## Setup
-Refer to the main 'readme.md' in the directory above.  This 'readme.md' contains additional
-information in setting up the 'virtual environment' and running the scripts in this
-subdirectory. 
+The algorithms illustrated in this directory are taken from "Hands-On Data Structures and Algorithms with Python", by Dr. Basant Agarwal
+Packt Publishing, 2022. 
 
 ## Environment
 To utilize these scripts, a virtual environment is created so that the installation of (various libraries) remains
