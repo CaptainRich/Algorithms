@@ -1,13 +1,15 @@
 # $`\textcolor{blue}{\text{Python Basics - Algorithms}}`$
-A collection of Python (.py) files illustrating algorithms in Python.  
+An illustration of a single linked list.  
 Richard Ay (April 2026, *updated *)
 
 ## $`\textcolor{blue}{\text{Table of Contents}}`$  
+* [Reference](#reference)
 * [Setup](#setup)
 * [Envirionment](#environment)
 * [File List](#file-list)
 
-
+## Reference
+Hands-On Data Structures and Algorithms with Python, Dr. Basant Agarwal, @2022.
 
 ## Setup
 The algorithms illustrated in this directory are taken from "Hands-On Data Structures and Algorithms with Python", by Dr. Basant Agarwal
