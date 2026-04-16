@@ -4,31 +4,29 @@ Richard Ay (April 2026, *updated *)
 
 ## $`\textcolor{blue}{\text{Table of Contents}}`$  
 * [Reference](#reference)
-* [Setup](#setup)
-* [Envirionment](#environment)
+* [Objective](#objective)
+* [Acceptance Criteria](#acceptance-criteria)
 * [File List](#file-list)
 
 ## Reference
 Hands-On Data Structures and Algorithms with Python, Dr. Basant Agarwal, @2022.
 
-## Setup
-The algorithms illustrated in this directory are taken from "Hands-On Data Structures and Algorithms with Python", by Dr. Basant Agarwal
-Packt Publishing, 2022. 
+## Objective
+The objective of the files in this directory is to illustrate the setup and usage (including testing)
+of a singly linked list. 
 
-## Environment
-To utilize these scripts, a virtual environment is created so that the installation of (various libraries) remains
-local to this subdirectory, and does not affect the rest of the machine.
-
-The virtual environment can be setup using the command: 
-**'python -m venv "ALGenv" --upgrade-deps --prompt="ALGenv"'**
-
-To start/stop the virtual environment, use the commands: **'ALGenv\scripts\activate'** or **'deactivate'**. Once
-activated, the virtual environment will change the (terminal) prompt from (PS) to (ALGenv).
-
-After starting the virtual environment, (various libraries) can be installed with the command:  
-**'python -m pip install library'**.  Subsequently the installation can be verified with the command: 
-**'python -m pip show library'**.
+## Acceptance Criteria
+The test file (single_list.py) will perform all operations, based on the classes and functions found
+in (basics.py).  The operations performed are:
+- list creation
+- list count (size)
+- list append
+- list insert (append) at a location
+- list search
+- list item deletion
+- list clear (empty)
 
 ## File List
-**PDF_Merger.py** - an 
+**basics.py** - a module containing the class definitions and basic functions 
+**single-list.py** - the main (driver) routine to illustrate the singly linked list 
 
