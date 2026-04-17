@@ -27,6 +27,6 @@ in (basics.py).  The operations performed are:
 - list clear (empty)
 
 ## File List
-**basics.py** - a module containing the class definitions and basic functions 
+**basics.py** - a module containing the class definitions and basic functions   
 **single-list.py** - the main (driver) routine to illustrate the singly linked list 
 

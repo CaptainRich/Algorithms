@@ -56,3 +56,9 @@ print( 'The current list size is: ', food.list_size() )
 print( ' ' )
 print( 'Is "cheese" in the list?', food.search( 'cheese' ) )
 print( 'Is "tomatoes" in the list?', food.search( 'tomatoes' ) )
+
+# Delete 'spam' from the list, which is the last node.
+food.delete_last_node()
+print( 'After deleting the last node (spam), the list is: ' )
+print_list()
+print( 'The current list size is: ', food.list_size() )

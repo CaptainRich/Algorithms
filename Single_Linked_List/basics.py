@@ -99,4 +99,42 @@ class SinglyLinkedList:
                 return True
             
         return False
-    
+
+#################################################################################
+    def delete_last_node( self ):
+        # Routine to delete the last node of the list
+        current  = self.head      # both pointers are set to the start of the list
+        previous = self.head
+
+        while current:
+            if current.next == None:           # found the last node
+                previous.next = current.next   # which is 'None'
+                self.size -= 1                 # reduce the size count
+
+            # If not at the end of the list, move both pointers forward
+            previous = current
+            current  = current.next
+
+
+#################################################################################
+    def delete_based_on_data( self, data ):
+        # Routine to delete a node from the list that matches 'data'.
+        current  = self.head      # both pointers are set to the start of the list
+        previous = self.head
+
+        while current:
+            if current.data == data:             # found the desired node
+                if current == self.head:
+                    self.head = current.next     # delete the first node
+
+                else:
+                    previous.next = current.next # delete by skipping over
+
+                self.size -= 1                   # reduce the count
+
+                return
+            
+            # If not the desired node, move both pointers forward
+            previous = current
+            current  = current.next
+      
