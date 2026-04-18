@@ -30,58 +30,58 @@ in (basics.py).  The operations performed are:
 ## File List
 **basics.py** - a module containing the class definitions and basic functions   
 **single-list.py** - the main (driver) routine to illustrate the singly linked list
- 
+
 
 ## Output
 
-PS C:\Python_Work\Algorithms\Single_Linked_List> python single_list.py
+PS C:\Python_Work\Algorithms\Single_Linked_List> python single_list.py  
  
-The initial list.
-The list size is:  3 
+The initial list.  
+The list size is:  3   
 
-The nodes data is:  eggs
-The nodes data is:  ham
-The nodes data is:  spam
+The nodes data is:  eggs  
+The nodes data is:  ham  
+The nodes data is:  spam  
  
-The list after appending "bacon" as the 2nd item.
-The list size is:  4 
+The list after appending "bacon" as the 2nd item.  
+The list size is:  4   
 
-The nodes data is:  eggs
-The nodes data is:  bacon
-The nodes data is:  ham
-The nodes data is:  spam
+The nodes data is:  eggs  
+The nodes data is:  bacon  
+The nodes data is:  ham  
+The nodes data is:  spam  
 
-Appending to the list start.
-The list after appending "cheese" to the beginning.
-The list size is:  5
+Appending to the list start.  
+The list after appending "cheese" to the beginning.  
+The list size is:  5  
 
-The nodes data is:  cheese
-The nodes data is:  eggs
-The nodes data is:  bacon
-The nodes data is:  ham
-The nodes data is:  spam
+The nodes data is:  cheese  
+The nodes data is:  eggs  
+The nodes data is:  bacon   
+The nodes data is:  ham  
+The nodes data is:  spam  
 
-The list has too few nodes for this insertion.
-Tried to append "tomatoes" at location 10.
-The list size is:  5
+The list has too few nodes for this insertion.  
+Tried to append "tomatoes" at location 10.  
+The list size is:  5  
 
 
-Is "cheese" in the list? True
-Is "tomatoes" in the list? False
-After deleting the last node (spam), the list is:
-The nodes data is:  cheese
-The nodes data is:  eggs
-The nodes data is:  bacon
-The nodes data is:  ham
+Is "cheese" in the list? True  
+Is "tomatoes" in the list? False  
+After deleting the last node (spam), the list is:  
+The nodes data is:  cheese  
+The nodes data is:  eggs  
+The nodes data is:  bacon  
+The nodes data is:  ham  
 
-The current list size is:  4
+The current list size is:  4  
 
-After deleting "ham" based on its value, the list is:
-The nodes data is:  cheese
-The nodes data is:  eggs
-The nodes data is:  bacon
+After deleting "ham" based on its value, the list is:  
+The nodes data is:  cheese  
+The nodes data is:  eggs  
+The nodes data is:  bacon  
 
-The current list size is:  3
+The current list size is:  3  
 
-After clearing the list, its size is:  0
-Is "eggs" in the list? False
+After clearing the list, its size is:  0  
+Is "eggs" in the list? False  
