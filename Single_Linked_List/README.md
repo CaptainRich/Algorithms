@@ -7,6 +7,7 @@ Richard Ay (April 2026, *updated *)
 * [Objective](#objective)
 * [Acceptance Criteria](#acceptance-criteria)
 * [File List](#file-list)
+* [Output](#output)
 
 ## Reference
 Hands-On Data Structures and Algorithms with Python, Dr. Basant Agarwal, @2022.
@@ -28,7 +29,8 @@ in (basics.py).  The operations performed are:
 
 ## File List
 **basics.py** - a module containing the class definitions and basic functions   
-**single-list.py** - the main (driver) routine to illustrate the singly linked list 
+**single-list.py** - the main (driver) routine to illustrate the singly linked list
+ 
 
 ## Output
 
@@ -62,3 +64,24 @@ The nodes data is:  spam
 The list has too few nodes for this insertion.
 Tried to append "tomatoes" at location 10.
 The list size is:  5
+
+
+Is "cheese" in the list? True
+Is "tomatoes" in the list? False
+After deleting the last node (spam), the list is:
+The nodes data is:  cheese
+The nodes data is:  eggs
+The nodes data is:  bacon
+The nodes data is:  ham
+
+The current list size is:  4
+
+After deleting "ham" based on its value, the list is:
+The nodes data is:  cheese
+The nodes data is:  eggs
+The nodes data is:  bacon
+
+The current list size is:  3
+
+After clearing the list, its size is:  0
+Is "eggs" in the list? False
