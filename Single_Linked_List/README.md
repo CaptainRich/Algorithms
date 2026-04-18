@@ -30,3 +30,35 @@ in (basics.py).  The operations performed are:
 **basics.py** - a module containing the class definitions and basic functions   
 **single-list.py** - the main (driver) routine to illustrate the singly linked list 
 
+## Output
+
+PS C:\Python_Work\Algorithms\Single_Linked_List> python single_list.py
+ 
+The initial list.
+The list size is:  3 
+
+The nodes data is:  eggs
+The nodes data is:  ham
+The nodes data is:  spam
+ 
+The list after appending "bacon" as the 2nd item.
+The list size is:  4 
+
+The nodes data is:  eggs
+The nodes data is:  bacon
+The nodes data is:  ham
+The nodes data is:  spam
+
+Appending to the list start.
+The list after appending "cheese" to the beginning.
+The list size is:  5
+
+The nodes data is:  cheese
+The nodes data is:  eggs
+The nodes data is:  bacon
+The nodes data is:  ham
+The nodes data is:  spam
+
+The list has too few nodes for this insertion.
+Tried to append "tomatoes" at location 10.
+The list size is:  5

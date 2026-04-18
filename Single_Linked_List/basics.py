@@ -137,4 +137,11 @@ class SinglyLinkedList:
             # If not the desired node, move both pointers forward
             previous = current
             current  = current.next
+
+#################################################################################
+    def clear( self ):
+        # Routine to clear (delete) the entire list
+        self.tail = None
+        self.head = None
+        self.size = 0
       

@@ -28,7 +28,7 @@ food.append( 'ham' )
 food.append( 'spam' )
 print( ' ' )
 print( 'The initial list.' )
-print( 'The list size is: ', food.size )
+print( 'The list size is: ', food.size, '\n' )
 print_list()
 
 
@@ -37,20 +37,21 @@ print_list()
 # Test the 'append_at_a_location' function.
 food.append_at_a_location( 'bacon', 2 )
 print( 'The list after appending "bacon" as the 2nd item.' )
-print( 'The list size is: ', food.size )
+print( 'The list size is: ', food.size, '\n' )
 print_list()
 
 
 food.append_at_a_location( 'cheese', 1 )
 print( 'The list after appending "cheese" to the beginning.' )
-print( 'The list size is: ', food.size )
+print( 'The list size is: ', food.size, '\n' )
 print_list()
 
 food.append_at_a_location( 'tomatoes', 10 )   # past the end of the list
-print( 'The list size is: ', food.size )
+print( 'Tried to append "tomatoes" at location 10.')
+print( 'The list size is: ', food.size, '\n' )
 print_list()
 
-print( 'The current list size is: ', food.list_size() )
+print( 'The current list size is: ', food.list_size(), '\n' )
 
 # Test the 'search' function.
 print( ' ' )
@@ -61,4 +62,15 @@ print( 'Is "tomatoes" in the list?', food.search( 'tomatoes' ) )
 food.delete_last_node()
 print( 'After deleting the last node (spam), the list is: ' )
 print_list()
-print( 'The current list size is: ', food.list_size() )
+print( 'The current list size is: ', food.size, '\n' )
+
+# Now delete 'ham', based on the value of the node (ham).
+food.delete_based_on_data( 'ham' )
+print( 'After deleting "ham" based on its value, the list is: ' )
+print_list()
+print( 'The current list size is: ', food.size, '\n' )
+
+# Delete (clear) the entire list
+food.clear()
+print( 'After clearing the list, its size is: ', food.size )
+print( 'Is "eggs" in the list?', food.search( 'eggs' ) )
