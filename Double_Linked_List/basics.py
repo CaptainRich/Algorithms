@@ -69,48 +69,33 @@ class DoublyLinkedList:
         self.size += 1
 
 ##################################################################################
-    def append_at_a_location( self, data, index ):
-        # Start at the 'head' and traverse to 'index', then insert/append.
+    def append_at_a_location( self, data ):
+        # This routine inserts a node in a doubly linked list where the node being
+        # added matches existing data in the list.
+
+        # Start at the 'head' and traverse to the node with matching data.
         current  = self.head
         previous = self.head
 
         # Encapsulate the new data into a node.
-        node = Node( data )
+        new_node = Node( data, None, None )
 
-        count = 1
         while current:
-            if index == 1:       # append at the start of the list
-                node.next = current
-                self.head = node
-                print( "Appending to the list start." )
-                self.size += 1
-                return
+            if current.data == data:               # found the insertion point
+                new_node.previous = previous       # insert before the existing node
+                new_node.next     = current
+                previous.next     = new_node
+                current.previous  = new_node
+                self.size         += 1
 
-            elif index == count: # insertion point found
-                node.next     = current
-                previous.next = node
-                self.size     += 1
-                return
-            
-            else:                # move forward to the next node
-                count += 1
-                previous = current
-                current  = current.next
-
-        if count < index:
-            print( "The list has too few nodes for this insertion." )
+            previous = current                     # if not the right node, move forward
+            current  = current.next
 
 ##################################################################################
     def list_size( self) :
-        # Simply traverse the list and count the items.
-        count = 0
-        current = self.head
+        # No need toy traverse the list, just return the size.
 
-        while current:
-            count +=1
-            current = current.next
-
-        return count
+        return self.size
 
 ##################################################################################
     def search( self, data ):

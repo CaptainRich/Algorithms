@@ -38,25 +38,19 @@ print( 'The list after appending "bacon" at the start of the list.' )
 print( 'The list size is: ', food.size, '\n' )
 print_list()
 
-exit()
-
-
-food.append_at_a_location( 'cheese', 1 )
-print( 'The list after appending "cheese" to the beginning.' )
+# Insert a new node with data that matches an existing node
+food.append_at_a_location( 'ham' )
+print( 'The list after inserting "ham" at the location of existing "ham". ' )
 print( 'The list size is: ', food.size, '\n' )
 print_list()
 
-food.append_at_a_location( 'tomatoes', 10 )   # past the end of the list
-print( 'Tried to append "tomatoes" at location 10.')
-print( 'The list size is: ', food.size, '\n' )
-print_list()
-
-print( 'The current list size is: ', food.list_size(), '\n' )
 
 # Test the 'search' function.
 print( ' ' )
 print( 'Is "cheese" in the list?', food.search( 'cheese' ) )
-print( 'Is "tomatoes" in the list?', food.search( 'tomatoes' ) )
+print( 'Is "ham" in the list?', food.search( 'ham' ) )
+
+exit()
 
 # Delete 'spam' from the list, which is the last node.
 food.delete_last_node()
