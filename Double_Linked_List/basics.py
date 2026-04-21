@@ -1,10 +1,6 @@
 """ The base class and functions to manipulate the 
     doubly linked list. """
 
-
-
-
-
 ####################################################################################################
 ####################################################################################################
 """The 'Node' class defines each item/entry in the (doubly linked) list."""
@@ -107,47 +103,70 @@ class DoublyLinkedList:
         return False
 
 #################################################################################
-    def delete_last_node( self ):
-        # Routine to delete the last node of the list
-        current  = self.head      # both pointers are set to the start of the list
-        previous = self.head
+    def delete_node_on_data( self , data ):
+        # Routine to delete a node from  the list, if 'data' matches
+        current  = self.head      #
+        node_deleted = False
 
-        while current:
-            if current.next == None:           # found the last node
-                previous.next = current.next   # which is 'None'
-                self.size -= 1                 # reduce the size count
+        if current == None:
+            # The list is empty
+            print( 'The list is empty, nothing to delete.' )
 
-            # If not at the end of the list, move both pointers forward
-            previous = current
-            current  = current.next
+        elif current.data == data:
+            # Have found the node to delete at the start of the list
+            self.head.previous = None
+            self.head          = current.next
+            node_deleted       = True
 
+        elif self.tail.data == data:
+            # Have found the node to delete at the tail of the list
+            self.tail      = self.tail.previous
+            self.tail.next = None
+            node_deleted   = True
 
-#################################################################################
-    def delete_based_on_data( self, data ):
-        # Routine to delete a node from the list that matches 'data'.
-        current  = self.head      # both pointers are set to the start of the list
-        previous = self.head
-
-        while current:
-            if current.data == data:             # found the desired node
-                if current == self.head:
-                    self.head = current.next     # delete the first node
+        else:
+            # The node to delete could be in the middle of the list
+            while current:
+                # Search for the matching node
+                if current.data == data:
+                    current.previous.next = current.next
+                    current.next.previous = current.previous
+                    node_deleted = True
+                    break
 
                 else:
-                    previous.next = current.next # delete by skipping over
+                    current = current.next  # keep searching
 
-                self.size -= 1                   # reduce the count
+            if node_deleted == False:
+                print( 'Desired item is not in the list.' )
 
+        if node_deleted:
+            self.size -= 1
+
+#################################################################################
+    def delete_node_on_location( self, index ):
+        # Start at the 'head' and traverse to 'index', then delete the node
+        current  = self.head
+ 
+        count = 1
+        while current:
+            if index == count:       # delete the node 
+                data = current.data
+                self.delete_node_on_data( data )
                 return
-            
-            # If not the desired node, move both pointers forward
-            previous = current
-            current  = current.next
+
+            else:                # move forward to the next node
+                count += 1
+                current  = current.next
+
+        if count < index:
+            print( "The list has too few nodes for this deletion." )   
 
 #################################################################################
     def clear( self ):
         # Routine to clear (delete) the entire list
-        self.tail = None
-        self.head = None
-        self.size = 0
+        self.tail     = None
+        self.head     = None
+        self.previous = None
+        self.size     = 0
       

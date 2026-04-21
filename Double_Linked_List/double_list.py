@@ -50,17 +50,22 @@ print( ' ' )
 print( 'Is "cheese" in the list?', food.search( 'cheese' ) )
 print( 'Is "ham" in the list?', food.search( 'ham' ) )
 
-exit()
 
-# Delete 'spam' from the list, which is the last node.
-food.delete_last_node()
-print( 'After deleting the last node (spam), the list is: ' )
+# Now delete 'ham', based on the value of the node (ham).
+food.delete_node_on_data( 'ham' )
+print( '\nAfter deleting "ham" based on its value, the list is: ' )
 print_list()
 print( 'The current list size is: ', food.size, '\n' )
 
-# Now delete 'ham', based on the value of the node (ham).
-food.delete_based_on_data( 'ham' )
-print( 'After deleting "ham" based on its value, the list is: ' )
+# Delete the 2nd occurrence of 'ham' based on its location index.
+food.delete_node_on_location( 3 )
+print( '\nAfter deleting "ham" based on its index (3)' )
+print_list()
+print( 'The current list size is: ', food.size, '\n' )
+
+# Test deleting an index past the end of the list, which has 3 nodes now.
+food.delete_node_on_location( 10 )
+print( '\nAfter deleting a location past the end of the list.' )
 print_list()
 print( 'The current list size is: ', food.size, '\n' )
 
