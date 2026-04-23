@@ -1,4 +1,4 @@
-""" An illustration of the "stack" data structure."""
+""" An illustration of the "stack" data structure using an array."""
 #################################################################################
 def push( x ):
     # Define the 'push' operation for the stack

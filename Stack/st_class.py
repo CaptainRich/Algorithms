@@ -52,3 +52,29 @@ class Stack:
         
         else:
             print( '\nThe stack is empty, nothing to pop.' )
+
+
+#################################################################################
+    def peek( self ):
+        # Define the "peek" operation, which returns the top of stack, without
+        # altering the stack.
+
+        if self.top:
+            return self.top.data
+        
+        else:
+            print( '\nThe stack is empty.' )
+            return None
+
+#################################################################################
+    def print_st( self ):
+        # Print the contents of the stack.
+        current = self.top
+
+        if not current:
+            print( '\nCannot print an empty stack.' )
+            return
+
+        while current:
+            print('Stack element is: ', current.data )
+            current = current.next
