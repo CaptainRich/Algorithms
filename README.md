@@ -3,30 +3,18 @@ A collection of Python (.py) files illustrating algorithms in Python.
 Richard Ay (April 2026, *updated *)
 
 ## $`\textcolor{blue}{\text{Table of Contents}}`$  
-* [Setup](#setup)
-* [Envirionment](#environment)
-* [File List](#file-list)
+* [Reference](#reference)
+* [Directory List](#directory-list)
 
 
 
-## Setup
-The algorithms illustrated in this directory are taken from "Hands-On Data Structures and Algorithms with Python", by Dr. Basant Agarwal
-Packt Publishing, 2022. 
+## Reference
+The algorithms illustrated in this directory are taken from "Hands-On Data Structures and
+ Algorithms with Python", by Dr. Basant Agarwal, Packt Publishing, 2022. 
 
-## Environment
-To utilize these scripts, a virtual environment is created so that the installation of (various libraries) remains
-local to this subdirectory, and does not affect the rest of the machine.
 
-The virtual environment can be setup using the command: 
-**'python -m venv "ALGenv" --upgrade-deps --prompt="ALGenv"'**
-
-To start/stop the virtual environment, use the commands: **'ALGenv\scripts\activate'** or **'deactivate'**. Once
-activated, the virtual environment will change the (terminal) prompt from (PS) to (ALGenv).
-
-After starting the virtual environment, (various libraries) can be installed with the command:  
-**'python -m pip install library'**.  Subsequently the installation can be verified with the command: 
-**'python -m pip show library'**.
-
-## File List
-**PDF_Merger.py** - an 
+## Directory List
+**Single_Linked_List** - a directory illustrating a singly linked list.   
+**Double_Linked_List** - a directory illustrating a doubly linked list.   
+**Stack** - a directory illustrating a stack structure, based on arrays, lists, and queues.   
 
