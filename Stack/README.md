@@ -24,7 +24,9 @@ The test file(s) will define the stack, then:
 
 ## File List
 **stack-array.py** - a module containing the function definitions and test routine for an array based stack.    
-**st_class.py** - a collection of classes and methods for a linked-list stack.
-**stack-list.py** - the test driver for the linked-list stack.
+**st_class.py** - a collection of classes and methods for a linked-list stack.  
+**stack-list.py** - the test driver for the linked-list stack.  
+**stack-queue.py** - the test driver for the queue based stack.  
+**q_class.py** - a collection of classes and methods for the queue based stack.  
 
 
