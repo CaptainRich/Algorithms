@@ -28,5 +28,9 @@ The test file(s) will define the stack, then:
 **stack-list.py** - the test driver for the linked-list stack.  
 **stack-queue.py** - the test driver for the queue based stack.  
 **q_class.py** - a collection of classes and methods for the queue based stack.  
+**player.py** - the test driver for the media player (a list-based queue application).  
+**media_player.py** - a collection of classes and methods for the media player.  
+**ql_class.py** - a collection of classes and methods for the list-based queue (media player) application.  
+
 
 
