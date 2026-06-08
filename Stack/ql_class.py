@@ -4,7 +4,7 @@
 
 #################################################################################
 class Node( object ):
-    """Define the 'node' class for each item in the queue."""
+    """Define the 'node' class for each item in the linked-list based queue."""
     def __init__( self, data=None, next=None, previous=None ):
         self.data     = data
         self.next     = next
@@ -32,20 +32,23 @@ class Queue:
             self.tail         = new_node    # the new tail is the new node
 
         self.count += 1                     # bump the count of the items in the queue
+        print( " Just 'enqueued: ", new_node.data.title )
 
 
     def dequeue( self ) :
         # The dequeue method removes a node from the front of the queue
 
         if self.count  == 1:                 # remove the only element in the queue
+            value      = self.head.data
             self.head  = None
             self.tail  = None
-            value      = self.data
+
 
         elif self.count > 1:
+            value     = self.head.data
             self.head = self.head.next       # point the head to the 2nd element
             self.head.previous = None        # original head previous is now None
-            value     = self.data
+  
 
         elif self.count < 1:
             print( '\nThe queue is empty.' )

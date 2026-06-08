@@ -24,6 +24,7 @@ media_player = mp.MediaPlayerQueue()
 media_player.add_track( track1 )
 media_player.add_track( track2 )
 media_player.add_track( track3 )
+print( "All tracks added to 'media_player'." )
 
 # Now play the tracks.
 media_player.play()

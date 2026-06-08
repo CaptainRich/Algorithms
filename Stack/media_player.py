@@ -16,7 +16,9 @@ class MediaPlayerQueue( ql_class.Queue ):
 
      def add_track( self, track ):
           # Add a track to the play list
+          print( "\n Adding track: ", track.title )
           self.enqueue( track )
+ 
 
 
      def play( self ):
@@ -24,6 +26,6 @@ class MediaPlayerQueue( ql_class.Queue ):
 
          while self.count > 0:
               current_track_node = self.dequeue()
-              print( '\nNow playing {}'.format( current_track_node.data.title) )
-              time.sleep( current_track_node.data.length )
+              print( '\nNow playing {}'.format( current_track_node.title) )
+              time.sleep( current_track_node.length )
 
