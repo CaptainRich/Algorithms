@@ -1,6 +1,6 @@
 # $`\textcolor{blue}{\text{Python Basics - Algorithms}}`$
 A collection of Python (.py) files illustrating algorithms in Python.  
-Richard Ay (April 2026, *updated *)
+Richard Ay (June 2026, *updated *)
 
 ## $`\textcolor{blue}{\text{Table of Contents}}`$  
 * [Reference](#reference)
@@ -16,5 +16,6 @@ The algorithms illustrated in this directory are taken from "Hands-On Data Struc
 ## Directory List
 **Single_Linked_List** - a directory illustrating a singly linked list.   
 **Double_Linked_List** - a directory illustrating a doubly linked list.   
-**Stack** - a directory illustrating a stack structure, based on arrays, lists, and queues.   
+**Stack** - a directory illustrating a stack structure, based on arrays, lists, and queues. 
+**Trees** - a directory illustrating tree structures.  
 
