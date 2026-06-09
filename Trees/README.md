@@ -17,11 +17,9 @@ The objective of the files in this directory is to illustrate the setup and usag
 of a "tree" data structure. 
 
 ## Acceptance Criteria
-The test file(s) will define the stack, then:  
-- test the 'push' operation  
-- test the 'pop' operation  
-- test the 'peek' operation  
+The test file(s) will define the tree, then:  
+- illustrate various methods of traversing the tree  
 
 ## File List
-**.py** - a 
+**binary_tree.py** - a module illustrating the setup and various traversal methods of a binary tree.
 
