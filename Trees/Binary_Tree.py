@@ -53,9 +53,9 @@ def post_order( root_node ):
 
 def level_order( root_node ):
     """ A function to recursively perform a 'level_order' traversal of a binary tree."""
-    list_of_nodes = []                # an empty array
+    list_of_nodes = []                      # an empty list
 
-    traversal_queue = deque( [root_node] )  # put the nodes in a queue
+    traversal_queue = deque( [root_node] )  # put the nodes in a queue, making 'root_node' an iterable list.
 
     while len( traversal_queue ) > 0:       # as long as there are elements in the queue
         node = traversal_queue.popleft()    # dequeue (pop) a node
