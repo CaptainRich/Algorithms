@@ -22,4 +22,5 @@ The test file(s) will define the tree, then:
 
 ## File List
 **binary_tree.py** - a module illustrating the setup and various traversal methods of a binary tree.
+**reverse_polish.py** - a module illustrating reverse polish notation calculation using a tree.
 
