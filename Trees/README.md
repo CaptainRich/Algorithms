@@ -1,27 +1,34 @@
 # $`\textcolor{blue}{\text{Python Basics - Algorithms}}`$
+
 An illustration of "tree" structures.  
 Richard Ay (June 2026, *updated *)
 
 ## $`\textcolor{blue}{\text{Table of Contents}}`$  
+
 * [Reference](#reference)
 * [Objective](#objective)
 * [Acceptance Criteria](#acceptance-criteria)
 * [File List](#file-list)
 
-
 ## Reference
+
 Hands-On Data Structures and Algorithms with Python, Dr. Basant Agarwal, @2022.
 
 ## Objective
+
 The objective of the files in this directory is to illustrate the setup and usage (including testing)
-of a "tree" data structure. 
+of a "tree" data structure.  
 
 ## Acceptance Criteria
+
 The test file(s) will define the tree, then:  
-- illustrate various methods of traversing the tree  
+
+* illustrate various methods of traversing the tree  
+* adding and deleting nodes from the tree  
+* operations on a binary tree  
 
 ## File List
+
 **binary_tree.py** - a module illustrating the setup and various traversal methods of a binary tree.  
 **binary_serch_tree.ph** - a module illustrating the setup and various operations for a binary search tree.  
 **reverse_polish.py** - a module illustrating reverse polish notation calculation using a tree.
-
