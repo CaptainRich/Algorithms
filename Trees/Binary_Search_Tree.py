@@ -90,13 +90,16 @@ class Tree:
 
         while True:
             if current.data == data:
+                # Found the node, return it with its parent.
                 return( parent, current )
 
             elif current.data > data:
+                # Move down the left hand branch
                 parent  = current
                 current = current.left_child
 
             else:
+                # Move down the right hand branch
                 parent  = current
                 current = current.right_child
 
