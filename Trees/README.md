@@ -30,5 +30,6 @@ The test file(s) will define the tree, then:
 ## File List
 
 **binary_tree.py** - a module illustrating the setup and various traversal methods of a binary tree.  
-**binary_search_tree.ph** - a module illustrating the setup and various operations for a binary search tree.  
+**binary_search_tree.py** - a module illustrating the setup and various operations for a binary search tree.  
+**heap_tree.py** - a module illustrating the setup and operations on a minHEAP tree structure.
 **reverse_polish.py** - a module illustrating reverse polish notation calculation using a tree.
