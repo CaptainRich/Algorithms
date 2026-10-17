@@ -82,6 +82,20 @@ class MinHeap:
         return item                             # return the old root
 
 
+    ################################################################################
+    def delete_at_index( self, index ):
+        # A function to delete the node at the specified index.
+
+        item = self.heap[index]
+
+        self.heap[index] = self.heap[self.size]     # put last node into index location
+        self.size -= 1                              # reduce the heap size
+        self.heap.pop()                             # remove the previous last location
+
+        self.sink(index)                            # rearrange the heap
+
+        return item
+
 ################################################################################
 
 # Implement a heap and its functionality.
@@ -91,7 +105,7 @@ h = MinHeap()
 for i in ( 4, 8, 7, 2, 9, 10, 5, 1, 3, 6 ):
     h.insert( i )
 
-print( '\nPrinting the heap, output should be: 0,1,2,5,3,6,10,7,8,4,9')
+print( '\nPrinting the heap, output should be: 0, 1, 2, 5, 3, 6, 10, 7, 8, 4, 9')
 print( h.heap )
 
 # Create a new heap and test the deletion of the root node
@@ -100,13 +114,26 @@ h2 = MinHeap()
 for i in ( 2, 3, 5, 7, 9, 10, 6 ):
     h2.insert( i )
 
-print( '\nPrinting the new heap, out put should be: 0,2,3,5,7,9,10,6' )
+print( '\nPrinting the 2nd heap, out put should be: 0, 2, 3, 5, 7, 9, 10, 6' )
 print( h2.heap )
 
-rnode = h2.delete_the_root()
-print( '\nDeleting the root node: ', rnode )
-print( '\nThe new heap should be: 0,3,6,5,7,9,10')
+r_node = h2.delete_the_root()
+print( '\nDeleting the root node: ', r_node )
+print( '\nThe new heap should be: 0, 3, 6, 5, 7, 9, 10')
 print( h2.heap )
 
+# Create a new heap and test the deletion of a node at a specified index.
+h3 = MinHeap()
+
+for i in ( 4, 8, 7, 2, 9, 10, 5, 1, 3, 6 ):
+    h3.insert( i )
+
+print( '\nPrinting the 3rd heap, output should be: 0, 1, 2, 5, 3, 6, 10, 7, 8, 4, 9' )
+print( h3.heap )
+
+d_node = h3.delete_at_index( 2 )
+print( '\nDeleted the node at index 2, the node was: ', d_node )
+print( '\nThe new heap should be: 0, 1, 3, 5, 4, 6, 10, 7, 8, 9')
+print( h3.heap )
 
         
